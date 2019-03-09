@@ -23,7 +23,7 @@
           </div>
         </nav>
         <div class="container">
-          <form class="form-inline" action="/results.html">
+          <form class="form-inline">
               <div class="form-group mx-sm-3 mb-2">
             <input class="form-control form-control-lg" type="text" placeholder="Start Location">
           </div>
@@ -48,10 +48,23 @@
                 <option>Bike Share</option>
             </select>
           </div>
-            <button type="submit" class="btn btn-primary mb-2">Search</button>
+            <button type="submit" class="btn btn-primary mb-2" id="getTransit">Search</button>
           
           </form>
         </div>
+
+        <script>
+          document.getElementById('getTransit').addEventListener('submit', getTransit);
+
+          function getTransit(){ 
+            fetch('transit.json')
+            .then((res) => res.json())
+            .then((data) => {
+              let output = '<h2> Transit</h2>'
+              console.log(data);
+            })
+          }
+        </script>
           
 </body>
 </html>
