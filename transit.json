@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "company-name": "Bolt Bus",
+        "start-location": "Seattle",
+        "end-location":"Vancouver",
+        "transit-type": "Bus"
+    },
+    {
+        "id": 2,
+        "company-name": "Greyhound",
+        "start-location": "Seattle",
+        "end-location":"Vancouver",
+        "transit-type": "Bus"
+    },
+    {
+        "id": 3,
+        "company-name": "Amtrak",
+        "start-location": "Seattle",
+        "end-location":"Vancouver",
+        "transit-type": "Train"
+    }
+]
